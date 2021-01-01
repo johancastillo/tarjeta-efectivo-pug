@@ -38,19 +38,19 @@ html(lang="es-ve")
                             ul.navbar-nav#navbar-nav
                                 
                                 li.nav-item
-                                    a.nav-link.scroll(href="#home") Inicio
+                                    a(href="#home").nav-link.scroll Inicio
                                 
                                 li.nav-item
-                                    a.nav-link.scroll(href="#function") ¿Cómo funciona?
+                                    a(href="#function").nav-link.scroll ¿Cómo funciona?
 
                                 li.nav-item
-                                    a.nav-link.scroll(href="#features") Beneficios
+                                    a(href="#features").nav-link.scroll Beneficios
                                 
                                 li.nav-item
-                                    a.nav-link.scroll(href="#review") Testimonios
+                                    a(href="#review").nav-link.scroll Testimonios
 
                                 li.nav-item
-                                    a.nav-link.scroll(href="#questions") Preguntas
+                                    a(href="#questions").nav-link.scroll Preguntas
 
 
             //- Welcome Area
@@ -87,7 +87,48 @@ html(lang="es-ve")
                             //- Welcome Thumb
                             .welcome-thumb.m-0.p-0(data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000")
                                 img(src="assets/img/welcome/illustration.webp" alt="")
-    
+
+            //- Counter Area
+            section.section.counter-area.ptb_50
+                .container
+                    .row.justify-content-center
+
+                        .col-5.col-sm-3.single-counter.text-center
+                            .counter-inner.p-3.p-md-0
+                                //-  Counter Item
+                                .counter-item.d-inline-block.mb-3
+                                    span.counter.fw-7 10
+                                    span.fw-7 K
+
+                                h5 Clientes
+
+                        .col-5.col-sm-3.single-counter.text-center
+                            .counter-inner.p-3.p-md-0
+                                //- Counter Item
+                                .counter-item.d-inline-block.mb-3
+                                    span.fw-7 +
+                                    span.counter.fw-7 150
+                                
+                                h5 Países
+
+                        .col-5.col-sm-3.single-counter.text-center
+                            .counter-inner.p-3.p-md-0
+                                //- Counter Item
+                                .counter-item.d-inline-block.mb-3
+                                    span.counter.fw-7 99.9
+                                    span.fw-7 %
+                                
+                                h5 Satisfacción
+
+                        .col-5.col-sm-3.single-counter.text-center
+                            .counter-inner.p-3.p-md-0
+                                //- Counter Item
+                                .counter-item.d-inline-block.mb-3
+                                    span.fw-7 +
+                                    span.counter.fw-7 5
+                                
+                                h5 Métodos de pago
+
 
         //- Scripts
         script(src="assets/js/jquery/jquery.min.js")
