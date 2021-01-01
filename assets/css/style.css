@@ -919,9 +919,6 @@ img {
       .welcome-area .welcome-thumb {
         /* max-width: 270px; */
         padding-top: 20px; } }
-    @media (max-width: 575px) {
-      .welcome-area .welcome-thumb {
-        /* max-width: 230px; */ } }
     .welcome-area .welcome-thumb .play-btn {
       position: relative;
       display: inline-block;
