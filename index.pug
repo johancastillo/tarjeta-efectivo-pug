@@ -19,6 +19,41 @@ html(lang="es-ve")
         link(rel="stylesheet" href="./assets/css/style.css")
     body
         .main
+            //- Navegation
+            header.navbar.navbar-sticky.navbar-expand-lg.navbar-dark.p-3
+                .container.position-relative
+                    a(href="#home").navbar-brand
+                        img(src="assets/img/logo/logo-white.svg" alt="brand-logo" width="180").navbar-brand-regular
+                        img(src="./assets/img/logo/logo.svg" alt="sticky brand-logo" width="180").navbar-brand-sticky
+                    
+                    button(type="button" data-toggle="navbarToggler" aria-label="Toggle navigation").navbar-toggler.d-lg-none
+                        span.navbar-toggler-icon
+                    
+                    .navbar-inner
+                        //- Mobile Menu Toggler -->
+                        button.navbar-toggler.d-lg-none(type="button" data-toggle="navbarToggler" aria-label="Toggle navigation")
+                            span.navbar-toggler-icon
+
+                        nav
+                            ul.navbar-nav#navbar-nav
+                                
+                                li.nav-item
+                                    a.nav-link.scroll(href="#home") Inicio
+                                
+                                li.nav-item
+                                    a.nav-link.scroll(href="#function") ¿Cómo funciona?
+
+                                li.nav-item
+                                    a.nav-link.scroll(href="#features") Beneficios
+                                
+                                li.nav-item
+                                    a.nav-link.scroll(href="#review") Testimonios
+
+                                li.nav-item
+                                    a.nav-link.scroll(href="#questions") Preguntas
+
+
+            //- Welcome Area
             section#home.section.welcome-area.bg-overlay.overflow-hidden.d-flex.align-items-center
                 .container
                     .row.align-items-center
