@@ -1,5 +1,13 @@
 {
-  "dependencies": {
-    "pug-cli": "^1.0.0-alpha6"
+  "name": "tarjeta-efectivo-pug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/johancastillo/tarjeta-efectivo-pug.git",
+  "author": "Johan Castillo <jcjohan2707@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "4.0.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "typescript": "^4.1.3"
   }
 }

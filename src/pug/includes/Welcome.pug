@@ -1,0 +1,33 @@
+section#home.section.welcome-area.bg-overlay.overflow-hidden.d-flex.align-items-center
+            .container
+                .row.align-items-center
+            
+                    //- Welcome Intro Start
+                    .col-12.col-md-7.col-lg-5
+                        .welcome-intro
+                            h1.text-white.title-h1 ¡Puedes enviar dinero a Venezuela con Tarjeta Efectivo!
+                                
+                            p.text-white.my-4.d-none.d-sm-block
+                                | Con Tarjeta Efectivo puedes enviar dinero a Venezuela para tus familiares y seres queridos
+                                | de forma rápida y segura, sin intermediarios desde cualquier parte del mundo. Solo necesitas
+                                | adquirirla, pagar con el método de tu preferencia y retirar el efectivo en nuestra tienda.
+                            
+                            p.text-white.my-4.d-block.d-sm-none
+                                | Con Tarjeta Efectivo puedes enviar dinero a Venezuela para tus familiares y seres queridos
+                                | de forma rápida y segura, sin intermediarios desde cualquier parte del mundo. Solo necesitas
+                                | adquirirla, pagar con el método de tu preferencia y retirar el efectivo en nuestra tienda.
+                            
+                            //- Store Buttons
+                            .button-group.store-buttons.d-flex
+                                button(type="button" onclick="redirect()").btn.btn-secondary.m-1
+                                    <span class="icon-paypal"></span> ¡Canjea tu PayPal!
+
+                                button(type="button" onclick="redirect()").btn.btn-primary.m-1
+                                    <span class="icon-gift"></span> ¡Regala!
+                                
+                        
+                        
+                    .col-12.col-md-5.col-lg-7
+                        //- Welcome Thumb
+                        .welcome-thumb.m-0.p-0(data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000")
+                            img(src="assets/img/welcome/illustration.webp" alt="")

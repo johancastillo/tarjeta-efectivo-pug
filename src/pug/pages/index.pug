@@ -1,0 +1,38 @@
+extends ../templates/template
+
+block content
+    .main
+        //- ***** Navegation *****
+        include ../includes/Navegation
+
+
+        //- ***** Welcome Area *****
+        include ../includes/Welcome
+
+        //- Counter Area
+        include ../includes/Counter
+    
+        //- ***** Banner Area *****
+        include ../includes/Banner
+
+        //- ***** Infografy Area *****
+        include ../includes/Infografy
+                            
+        //- ***** Btn action 1 *****
+        include ../includes/Btn1
+
+        //- ***** Benefits Area *****
+        include ../includes/Benefits
+
+        //- ***** Btn action 2 *****
+        <div class="buttons">
+
+            <button class="btn btn-tertiary" onclick="redirect()">
+                <span class="icon-paypal"></span> ¡Canjea tu PayPal!
+            </button>
+
+            <button class="btn btn-primary efectivo" onclick="redirect()">
+                <span class="icon-gift"></span> ¡Regala!
+            </button>
+
+        </div> 

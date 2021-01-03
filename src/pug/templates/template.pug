@@ -1,0 +1,32 @@
+//- Mixins
+include ../mixins/btns
+
+//- Template
+doctype html
+html(lang="es-ve")
+    head
+        title Tarjeta Efectivo - Compralotodo
+        //- Meta Tags
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="description" content="Envia dinero a venezuela con Tarjeta Efectivo o canjea tu saldo de PayPal")
+        //- Favicon
+        link(rel="icon" href="assets/img/icon.svg")
+        //- Icomoon
+        link(rel="stylesheet" href="./icomoon/style.css")
+        //- Fontawesome
+        link(rel="stylesheet" href="./assets/css/all.min.css")
+        //- Animation CSS
+        link(rel="stylesheet" href="./assets/css/aos.css")
+        //- Bootstrap
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous")
+        //- CSS
+        link(rel="stylesheet" href="./assets/css/styles.css")
+    body
+        block content
+
+        block scripts
+            //- Scripts
+            script(src="assets/js/jquery/jquery.min.js")
+            script(src="assets/js/plugins/plugins.min.js")
+            script(src="./assets/js/active.min.js")
+            script(src="./assets/js/redirect.js")

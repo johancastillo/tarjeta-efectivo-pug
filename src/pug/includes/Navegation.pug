@@ -1,0 +1,31 @@
+header.navbar.navbar-sticky.navbar-expand-lg.navbar-dark.p-3
+            .container.position-relative
+                a(href="#home").navbar-brand
+                    img(src="assets/img/logo/logo-white.svg" alt="brand-logo" width="180").navbar-brand-regular
+                    img(src="./assets/img/logo/logo.svg" alt="sticky brand-logo" width="180").navbar-brand-sticky
+                
+                button(type="button" data-toggle="navbarToggler" aria-label="Toggle navigation").navbar-toggler.d-lg-none
+                    span.navbar-toggler-icon
+                
+                .navbar-inner
+                    //- Mobile Menu Toggler -->
+                    button.navbar-toggler.d-lg-none(type="button" data-toggle="navbarToggler" aria-label="Toggle navigation")
+                        span.navbar-toggler-icon
+
+                    nav
+                        ul.navbar-nav#navbar-nav
+                            
+                            li.nav-item
+                                a(href="#home").nav-link.scroll Inicio
+                            
+                            li.nav-item
+                                a(href="#function").nav-link.scroll ¿Cómo funciona?
+
+                            li.nav-item
+                                a(href="#features").nav-link.scroll Beneficios
+                            
+                            li.nav-item
+                                a(href="#review").nav-link.scroll Testimonios
+
+                            li.nav-item
+                                a(href="#questions").nav-link.scroll Preguntas
