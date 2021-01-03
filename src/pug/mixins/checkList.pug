@@ -1,0 +1,12 @@
+mixin checkList(title, description)
+    li.py-1
+        //- List Box
+        .list-box.media
+            span.icon.align-self-center
+                i.fas.fa-check
+
+            span.media-body.pl-3(style={'margin-left': '5px'})
+                strong= title
+
+        div
+            span= description
