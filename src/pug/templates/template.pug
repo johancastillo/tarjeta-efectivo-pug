@@ -1,14 +1,19 @@
+//- Config
+block config
+    include ../includes/config
+
 //- Mixins
 include ../mixins/btns
+include ../mixins/counterItem
 
 //- Template
 doctype html
-html(lang="es-ve")
+html(lang= language)
     head
-        title Tarjeta Efectivo - Compralotodo
+        title= `${titlePage}`
         //- Meta Tags
         meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-        meta(name="description" content="Envia dinero a venezuela con Tarjeta Efectivo o canjea tu saldo de PayPal")
+        meta(name="description" content= metaDescription)
         //- Favicon
         link(rel="icon" href="assets/img/icon.svg")
         //- Icomoon
