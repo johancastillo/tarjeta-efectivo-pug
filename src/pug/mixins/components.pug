@@ -1,2 +1,25 @@
-mixin reviewCard()
-    
+mixin reviewCard(name, text)
+    div.col-12.col-md-6.col-lg-4.mb-4
+        <!-- Single Review -->
+        div.single-review.card
+            //- Card Top
+            div.card-top.p-4
+                //- Stars
+                div.review-icon
+                    i.fas.fa-star.text-warning
+                    i.fas.fa-star.text-warning
+                    i.fas.fa-star.text-warning
+                    i.fas.fa-star.text-warning
+                    i.fas.fa-star.text-warning
+
+                //- Review Text
+                div.review-text.mt-4
+                    p= text
+            
+
+            //- Reviewer
+            div.reviewer.media.bg-gray.p-4
+                //- Reviewer Media
+                div.reviewer-meta.media-body.align-self-center
+                    h5.reviewer-name.color-primary.mb-2= name
+                    //- <h6 class="text-secondary fw-6">Venezuela</h6>
