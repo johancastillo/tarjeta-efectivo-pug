@@ -1,3 +1,4 @@
+//- ***** Review Card *****
 mixin reviewCard(name, text)
     div.col-12.col-md-6.col-lg-4.mb-4
         <!-- Single Review -->
@@ -23,3 +24,31 @@ mixin reviewCard(name, text)
                 div.reviewer-meta.media-body.align-self-center
                     h5.reviewer-name.color-primary.mb-2= name
                     //- <h6 class="text-secondary fw-6">Venezuela</h6>
+
+
+//- ***** Benefit Card *****
+mixin benefitCard()
+    <div class="col-12 col-md-6 col-lg-4 res-margin">
+        //- Image Box
+        <div class="image-box text-center icon-1 p-5 wow fadeInLeft" data-wow-delay="0.4s">
+
+            //- Featured Image
+            div.featured-img.mb-3
+                span(class="icon-fitment").benefit-icon
+
+            //- Icon Text
+            div.icon-text
+                h3.mb-2 Comodidad
+
+                block contentCard
+                    <p>
+                        | Puedes enviar remesas a <br>
+                        | Venezuela directamente, sin <br> 
+                        | intermediarios ni terceros. 
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+
+        </div>
+    </div>
