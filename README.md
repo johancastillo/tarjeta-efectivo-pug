@@ -48,11 +48,6 @@ Using `yarn`
 $ yarn
 ```
 
-Using `npm`
-```shell
-$ npm install
-```
-
 ### **Comands for project compilation**
 
 ```shell
