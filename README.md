@@ -38,6 +38,19 @@ This project is developed under the [Easy Template library](https://github.com/j
                     +counterItem(true, 5, false, 'Métodos de pago')
     ```
 
+
+
+### **Install dependencies**
+Using `yarn`
+```shell
+$ yarn
+```
+
+Using `npm`
+```shell
+$ npm install
+```
+
 ### **Comands for project compilation**
 
 #### Compile **Pug** code
