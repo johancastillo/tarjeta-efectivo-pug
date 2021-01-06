@@ -39,6 +39,8 @@ This project is developed under the [Easy Template library](https://github.com/j
     ```
 
 
+### Install YARN
+[Install yarn](https://classic.yarnpkg.com/en/docs/install#debian-stable)
 
 ### **Install dependencies**
 Using `yarn`
@@ -53,22 +55,8 @@ $ npm install
 
 ### **Comands for project compilation**
 
-#### Compile **Pug** code
-
 ```shell
-$ yarn pug ./src/pug/pages/ -o ./dist/ -p ./src/pug/includes/
-```
-
-#### Compile **TypeScript** code
-
-```shell
-$ yarn tsc
-```
-
-#### Compile **Sass** code
-
-```shell
-$ yarn node-sass ./src/scss/ --output ./dist/assets/css/
+$ bash commands/compile.sh
 ```
 
 
