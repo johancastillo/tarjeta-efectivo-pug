@@ -12,23 +12,24 @@ include ../mixins/components
 doctype html
 html(lang= language)
     head
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PK5NQ0Q09"></script>
+        //- Global site tag (gtag.js) - Google Analytics Start
+        script(async src="https://www.googletagmanager.com/gtag/js?id=G-7PK5NQ0Q09")
         script.
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-7PK5NQ0Q09');
+        //- Global site tag (gtag.js) - Google Analytics End
        
 
-        <!-- Google Tag Manager -->
+        //- Google Tag Manager Start
         script.
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-NKBNP79');
-        <!-- End Google Tag Manager -->
+        //- Google Tag Manager End
 
         title= `${titlePage}`
         //- Meta Tags
@@ -50,23 +51,22 @@ html(lang= language)
         link(rel="stylesheet" href="./assets/css/styles.css")
 
 
-        <!-- Global site tag (gtag.js) - Google Ads: 471886424 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-471886424"></script>
+        //- Global site tag (gtag.js) - Google Ads: 471886424
+        script(async src="https://www.googletagmanager.com/gtag/js?id=AW-471886424")
         script.
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-471886424');
 
-        <!-- Event snippet for Vista de página de compra en efectivo 01- Chile conversion page -->
+        //- Event snippet for Vista de página de compra en efectivo 01- Chile conversion page
         script.
             gtag('event', 'conversion', {'send_to': 'AW-471886424/NOMSCPLZuvEBENjUgeEB'});
     body
-        <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKBNP79" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript>
-        <!-- End Google Tag Manager (noscript) -->
+        //- Google Tag Manager (noscript)
+        noscript
+            iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-NKBNP79" height="0" width="0" style="display:none;visibility:hidden")
+        //- End Google Tag Manager (noscript)
 
         block content
 

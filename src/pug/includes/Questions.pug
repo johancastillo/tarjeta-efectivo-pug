@@ -1,3 +1,7 @@
+//- ***** Card Question Start ****
+include ./../mixins/cardQuestion
+//- ***** Card Question End ****
+
 section.section.faq-area.style-two.ptb_100(id="questions")
     div.container
 
@@ -12,165 +16,29 @@ section.section.faq-area.style-two.ptb_100(id="questions")
         div.row.justify-content-center
             div.col-12
                 //- FAQ Content
-                <div class="faq-content">
+                div.faq-content
                     //- sApp Accordion
-                    <div class="accordion" id="sApp-accordion">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-6 questions">
+                    div.accordion#sApp-accordion
+                    
+                        div.row.justify-content-center
 
-                                //- Question 1
-                                <div class="card border-0">
-                                    <!-- Card Header -->
-                                    <div class="card-header bg-inherit border-0 p-0">
-                                        <h3 class="mb-0 py-3 question">
-                                            | ¿Se paga una comisión extra para retirar dólares en efectivo en la tienda?
-                                        </h3>
-                                    </div>
-                                    //- Card Body
-                                    <div class="card-body px-0 py-3">
-                                        | No, con Tarjeta Efectivo puedes enviar dinero a Venezuela y retirar el monto exacto por el que adquieres tarjeta efectivo. El único costo lo asume el emisor o comprador de la tarjeta, el cual es equivalente al 10% de la compra por gastos administrativos.
-                                    </div>
-                                </div>
+                            div.col-12.col-md-6.questions
 
-                                //- Question 2 -->
-                                <div class="card border-0">
-                                    <!-- Card Header -->
-                                    <div class="card-header bg-inherit border-0 p-0">
-                                        <h3 class="mb-0 question">
-                                            | ¿Qué métodos de pago aceptan?
-                                        </h3>
-                                    </div>
-                                    <!-- Card Body -->
-                                    <div class="card-body px-0 py-3">
-                                        | Aceptamos  TDC Visa y Mastercard, Tarjeta de Débito Internacional, Zelle, Paypal o Bitcoin Cash. No aceptamos pagos en Bs.
-                                    </div>
-                                </div>
+                                each question in questions.column1
+                                    +cardQuestion(question.title, question.description)
+                                
 
-                                //- Question 3
-                                <div class="card border-0">
-                                    <!-- Card Header -->
-                                    <div class="card-header bg-inherit border-0 p-0">
-                                        <h3 class="mb-0 question">
-                                            | ¿La Tarjeta Efectivo se puede canjear en otras divisas en la tienda?
-                                        </h3>
-                                    </div>
-                                    <!-- Card Body -->
-                                    <div class="card-body px-0 py-3">
-                                        | No, la tarjeta efectivo se canjea únicamente en USD en efectivo.
-                                    </div>
-                                </div>
+                            div.col-12.col-md-6.questions
 
-                                //- Question 4
-                                <div class="card border-0">
-                                    <!-- Card Header -->
-                                    <div class="card-header bg-inherit border-0 p-0">
-                                        <h3 class="mb-0 question">
-                                            | ¿Debo retirar el dinero en la tienda?
-                                        </h3>
-                                    </div>
-                                    <!-- Card Body -->
-                                    <div class="card-body px-0 py-3">
-                                        | Si, para hacer efectivo su retiro, debe ir a la tienda ubicada en el Centro Comercial Millenium Mall, Los Dos Caminos, en Caracas, Venezuela.
-                                    </div>
-                                </div>
+                                each question in questions.column2
+                                    +cardQuestion(question.title, question.description)
 
-                                //- Question 5
-                                <div class="card border-0">
-                                    <!-- Card Header -->
-                                    <div class="card-header bg-inherit border-0 p-0">
-                                        <h3 class="mb-0 question">
-                                            | ¿Cuál es el monto mínimo y máximo diario para enviar dinero a Venezuela con Tarjeta Efectivo?
-                                        </h3>
-                                    </div>
-                                    <!-- Card Body -->
-                                    <div class="card-body px-0 py-3">
-                                        | El monto mínimo es de 20 USD y máximo de 500 USD por transacción.
-                                    </div>
-                                </div>                                        
-                            </div>
+                        div.row.justify-content-center
+                            p.text-body.text-center.pt-4.px-3.fw-5 ¿Tienes otras preguntas? 
+                                <br>
 
+                                a(href="https://wa.me/584144664206" style="text-decoration: none" target="_blank")
+                                    img(src="./assets/img/logo-whatsapp.webp" width="60" alt="") 
+                                    span Contáctanos
 
-                            <div class="col-12 col-md-6 questions">
-
-                                //- Question 6
-                                <div class="card border-0">
-                                    <!-- Card Header -->
-                                    <div class="card-header bg-inherit border-0 p-0">
-                                        <h3 class="mb-0 question">
-                                            | ¿Cómo manejan la tasa de conversión de Euro u otras divisas a Dolar para enviar dinero a Venezuela ?
-                                        </h3>
-                                    </div>
-                                    <!-- Card Body -->
-                                    <div class="card-body px-0 py-3">
-                                        | El costo de las Tarjetas Efectivo se muestra únicamente en dólares ya que esta es la divisa de mayor circulación, sin embargo puedes procesar el pago de la misma desde cualquier parte del mundo, la conversión del tipo de cambio de Euro u otra moneda a Dólar la realiza el banco emisor.
-                                    </div>
-                                </div>
-
-                                //- Question 7
-                                <div class="card border-0">
-                                    <!-- Card Header -->
-                                    <div class="card-header bg-inherit border-0 p-0">
-                                        <h3 class="mb-0 question">
-                                            | ¿Se puede retirar la Tarjeta Efectivo sin tener el código que Compralotodo envía al correo?
-                                        </h3>
-                                    </div>
-                                    <!-- Card Body -->
-                                    <div class="card-body px-0 py-3">
-                                        | No, debe imprimir el correo o simplemente mostrar el screenshot de la compra y el código con su cédula de identidad en mano.
-                                    </div>
-                                </div>
-
-                                //- Question 8
-                                <div class="card border-0">
-                                    <!-- Card Header -->
-                                    <div class="card-header bg-inherit border-0 p-0">
-                                        <h3 class="mb-0 question">
-                                            | Puede ir otra persona a retirar el efectivo que no sea el beneficiario?
-                                        </h3>
-                                    </div>
-                                    <!-- Card Body -->
-                                    <div class="card-body px-0 py-3">
-                                        | No, debe ir el beneficiario de la tarjeta para poder canjear su Tarjeta Efectivo.
-                                    </div>
-                                </div>
-
-                                //- Question 9
-                                <div class="card border-0">
-                                    <!-- Card Header -->
-                                    <div class="card-header bg-inherit border-0 p-0">
-                                        <h3 class="mb-0 question">
-                                            | ¿Una vez comprada la Tarjeta Efectivo cuando puedo ir a la tienda a canjearla?
-                                        </h3>
-                                    </div>
-                                    <!-- Card Body -->
-                                    <div class="card-body px-0 py-3">
-                                        | Debe canjearlo 24 horas después de haber realizado su compra online.
-                                    </div>
-                                </div>
-
-                                //- Question 10
-                                <div class="card border-0">
-                                    <!-- Card Header -->
-                                    <div class="card-header bg-inherit border-0 p-0">
-                                        <h3 class="mb-0 question">
-                                            | ¿El beneficiario puede ser el mismo comprador de la Tarjeta Efectivo?
-                                        </h3>
-                                    </div>
-                                    <!-- Card Body -->
-                                    <div class="card-body px-0 py-3">
-                                        | Si, al retirar Paypal o utilizar otro método de pago el beneficiario puede ser el mismo emisor de la Tarjeta Efectivo.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center">
-                            <p class="text-body text-center pt-4 px-3 fw-5">¿Tienes otras preguntas? <br>
-                                <a href="https://wa.me/584144664206" style="text-decoration: none" target=”_blank”>
-                                    <img src="./assets/img/logo-whatsapp.webp" width="60" alt=""> Contáctanos
-                                </a>                                        
-                            </p>
-                        </div>
-                    </div>
-                </div>
 //- ***** Questions Area End *****

@@ -1,3 +1,3 @@
 #!/bin/bash
  
-yarn pug ./src/pug/pages/ -o ./dist/ -p ./src/pug/includes/ && yarn node-sass ./src/scss/ --output ./dist/assets/css/ && yarn tsc
+yarn pug ./src/pug/pages/ -o ./build/ -p ./src/pug/includes/ && yarn node-sass ./src/scss/ --output ./build/assets/css/ && yarn tsc

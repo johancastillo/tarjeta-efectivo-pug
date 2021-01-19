@@ -1,0 +1,1 @@
+yarn pug --pretty ./src/pug/pages/ -o ./build/ -p ./src/pug/includes/

@@ -1,2 +1,8 @@
-mixin cardQuestion()
+mixin cardQuestion(title, description)
+    div.card.border-0
+        //- Card Header
+        div.card-header.bg-inherit.border-0.p-0
+            h3.mb-0.py-3.question= title
+        //- Card Body
+        div.card-body.px-0.py-3= description
     
